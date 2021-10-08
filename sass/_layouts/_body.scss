@@ -1,0 +1,17 @@
+/*clase que le da el bg a todas las secciones de pag*/
+.body{
+    background: rgb(255, 226, 146);
+    background: radial-gradient(
+        circle,
+        rgb(255, 226, 146) 0%,
+        rgb(245, 214, 146) 4%,
+        rgb(245, 198, 136) 10%,
+        rgb(250, 218, 150) 46%,
+        rgb(252, 191, 112) 82%,
+        rgb(219, 192, 143) 100%
+    );
+    &--error{
+        background-image: radial-gradient(circle, #051937, #003654, #00546d, #15747f, #43948d);
+
+    }
+}
