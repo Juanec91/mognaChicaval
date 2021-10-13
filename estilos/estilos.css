@@ -129,6 +129,11 @@ header nav ul {
       width: 420px;
       height: 510px;
       border: solid black; } }
+  @media screen and (max-width: 1024px) {
+    .section__div__img {
+      width: 320px;
+      height: 410px;
+      border: solid black; } }
   @media screen and (max-width: 768px) {
     .section__div__img {
       width: 220px;
@@ -148,6 +153,11 @@ header nav ul {
     .section__div__img--otraFoto {
       height: 570px;
       width: 420px;
+      border: solid black; } }
+  @media screen and (max-width: 1024px) {
+    .section__div__img--otraFoto {
+      height: 320px;
+      width: 470px;
       border: solid black; } }
   @media screen and (max-width: 768px) {
     .section__div__img--otraFoto {
@@ -187,6 +197,11 @@ header nav ul {
     .div__img {
       width: 250px;
       height: 330px; } }
+  @media screen and (max-width: 1024px) {
+    .div__img {
+      width: 280px;
+      height: 380px;
+      box-shadow: 11px 10px 31px 15px rgba(128, 124, 128, 0.77); } }
   @media screen and (max-width: 1920px) {
     .div__img {
       width: 380px;
@@ -204,6 +219,11 @@ header nav ul {
       .div__img--imgSecIndex {
         width: 330px;
         height: 330px; } }
+    @media screen and (max-width: 1024px) {
+      .div__img--imgSecIndex {
+        width: 380px;
+        height: 380px;
+        box-shadow: 11px 10px 31px 15px rgba(128, 124, 128, 0.77); } }
     @media screen and (max-width: 1920px) {
       .div__img--imgSecIndex {
         width: 480px;
@@ -256,9 +276,6 @@ header nav ul {
   letter-spacing: 1px;
   padding: 10px;
   margin: 5px; }
-  @media screen and (max-width: 1920px) {
-    .div__p--nuclea {
-      font-size: 4.5rem; } }
 
 .div__p__span {
   font-family: "Maven Pro", sans-serif;
@@ -269,9 +286,6 @@ header nav ul {
   margin: 5px;
   font-weight: bold;
   letter-spacing: 2px; }
-  @media screen and (max-width: 1920px) {
-    .div__p__span {
-      font-size: 5.7rem; } }
 
 .div--nucleaFlex {
   display: flex;

@@ -9,6 +9,11 @@
         @content;
     }
 }
+@mixin normal {
+    @media  screen and (max-width: 1024px) {
+        @content;
+    }
+}
 @mixin grandes {
     @media screen and (max-width: 1920px) {
         @content;

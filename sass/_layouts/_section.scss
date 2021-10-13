@@ -32,6 +32,11 @@
             height: 510px;
             border: $border-uno;
         }
+        @include normal{
+            width: 320px;
+            height: 410px;
+            border: $border-uno;
+        }
         @include tablet {
             width: 220px;
             height: 310px;
@@ -50,6 +55,11 @@
         @include grandes {
             height: 570px;
             width: 420px;
+            border: $border-uno;
+        }
+        @include normal{
+            height: 320px;
+            width: 470px;
             border: $border-uno;
         }
         @include tablet {
@@ -94,6 +104,11 @@
             width: 250px;
             height: 330px;
         }
+        @include normal {
+            width: 280px;
+            height: 380px;
+            box-shadow: 11px 10px 31px 15px rgba(128, 124, 128, 0.77);
+        }
         @include grandes {
             width: 380px;
             height: 480px;
@@ -111,6 +126,11 @@
             @include tablet {
                 width: 330px;
                 height: 330px;
+            }
+            @include normal{
+                width: 380px;
+                height: 380px;
+                box-shadow: 11px 10px 31px 15px rgba(128, 124, 128, 0.77);
             }
             @include grandes {
                 width: 480px;
@@ -175,9 +195,6 @@
             letter-spacing: 1px;
             padding: 10px;
             margin: 5px;
-            @include grandes {
-                font-size: $font-size * 1.5;
-            }
         }
         &__span {
             font-family: $font-uno;
@@ -189,9 +206,6 @@
             margin: 5px;
             font-weight: bold;
             letter-spacing: 2px;
-            @include grandes {
-                font-size: $font-span * 1.5;
-            }
         }
     }
     &--nucleaFlex {
