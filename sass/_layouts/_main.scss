@@ -22,6 +22,13 @@
         color: $color-dos;
         text-align: center;
         letter-spacing: 2px;
+        @include movil{
+            font-family: $font-uno;
+        font-size: 2rem;
+        color: $color-dos;
+        text-align: center;
+        letter-spacing: 2px;
+        }
     }
 }
 /*Titulo que acompaña en todas los html*/
@@ -39,6 +46,13 @@
         color: $color-uno;
         text-align: center;
         letter-spacing: 2px;
+        @include movil{
+            font-family: $font-uno;
+        font-size: 3rem;
+        color: $color-uno;
+        text-align: center;
+        letter-spacing: 2px;
+        }
     }
     &__h2 {
         font-family: $font-uno;
@@ -46,6 +60,13 @@
         color: $color-uno;
         text-align: center;
         letter-spacing: 2px;
+        @include movil{
+            font-family: $font-uno;
+        font-size: 2.5rem;
+        color: $color-dos;
+        text-align: center;
+        letter-spacing: 2px;
+        }
     }
 }
 
