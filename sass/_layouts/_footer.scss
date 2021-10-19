@@ -38,6 +38,9 @@
                     height: 36px;
                     margin: 5px;
                     padding: 5px;
+                    @include movil {
+                        display: none;
+                    }
                     &:hover {
                         transform: scale(0.9);
                     }

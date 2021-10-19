@@ -47,10 +47,15 @@
                     width: 300px;
                     height: 150px;
                     transition: all 3s;
+                    @include movil { width: 200px;
+                        height: 100px;
+
+                    }
                     &:focus {
                         width: 450px;
                         height: 200px;
                     }
+                    
                 }
             }
             &__button {

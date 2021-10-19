@@ -96,46 +96,47 @@
         width: 280px;
         height: 380px;
         box-shadow: 11px 10px 31px 15px rgba(128, 124, 128, 0.77);
-        @include movil {
-            width: 150px;
-            height: 230px;
-        }
-        @include tablet {
-            width: 250px;
-            height: 330px;
+        @include grandes {
+            width: 380px;
+            height: 480px;
+            box-shadow: 11px 10px 31px 15px rgba(128, 124, 128, 0.77);
         }
         @include normal {
             width: 280px;
             height: 380px;
             box-shadow: 11px 10px 31px 15px rgba(128, 124, 128, 0.77);
         }
-        @include grandes {
-            width: 380px;
-            height: 480px;
-            box-shadow: 11px 10px 31px 15px rgba(128, 124, 128, 0.77);
+        @include tablet {
+            width: 250px;
+            height: 330px;
         }
+        @include movil {
+            width: 150px;
+            height: 230px;
+        }
+        
 
         &--imgSecIndex {
             width: 380px;
             height: 380px;
             box-shadow: 11px 10px 31px 15px rgba(128, 124, 128, 0.77);
-            @include movil {
-                width: 230px;
-                height: 230px;
-            }
-            @include tablet {
-                width: 330px;
-                height: 330px;
+            @include grandes {
+                width: 480px;
+                height: 480px;
+                box-shadow: 11px 10px 31px 15px rgba(128, 124, 128, 0.77);
             }
             @include normal{
                 width: 380px;
                 height: 380px;
                 box-shadow: 11px 10px 31px 15px rgba(128, 124, 128, 0.77);
             }
-            @include grandes {
-                width: 480px;
-                height: 480px;
-                box-shadow: 11px 10px 31px 15px rgba(128, 124, 128, 0.77);
+            @include tablet {
+                width: 330px;
+                height: 330px;
+            }             
+            @include movil {
+                width: 230px;
+                height: 230px;
             }
         }
     }
@@ -167,16 +168,16 @@
             height: 600px;
             width: 600px;
             border: $border-uno;
-            box-shadow: 11px 10px 31px 15px rgba(128, 124, 128, 0.77);
-            @include movil {
-                height: 300px;
-                width: 300px;
-                border: $border-uno;
-                box-shadow: 11px 10px 31px 15px rgba(128, 124, 128, 0.77);
-            }
+            box-shadow: 11px 10px 31px 15px rgba(128, 124, 128, 0.77);            
             @include tablet {
                 height: 500px;
                 width: 500px;
+                border: $border-uno;
+                box-shadow: 11px 10px 31px 15px rgba(128, 124, 128, 0.77);
+            }
+            @include movil {
+                height: 300px;
+                width: 300px;
                 border: $border-uno;
                 box-shadow: 11px 10px 31px 15px rgba(128, 124, 128, 0.77);
             }
@@ -195,6 +196,9 @@
             letter-spacing: 1px;
             padding: 10px;
             margin: 5px;
+            @include movil {
+                font-size: 2rem;
+            }
         }
         &__span {
             font-family: $font-uno;
@@ -206,6 +210,10 @@
             margin: 5px;
             font-weight: bold;
             letter-spacing: 2px;
+            @include movil {
+                font-size: 2.8rem;
+                align-self: center;
+            }
         }
     }
     &--nucleaFlex {
