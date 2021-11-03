@@ -20,17 +20,13 @@
 	</head>
 	<body class="body">
 		<header>
-			<div class="div">
-				<a class="div__a" href="../index.html">
-					<!-- header de la pag con las redes y un enlace que redireciona al index -->
-					<!--para colocar los logos-->
-					<img class="div__a__img div__a__img--logoMogna" src="../img/logo.png" alt="logoMarca">
-				</a>
+			<div class="div div--containerHead">
+				<!-- header de la pag con las redes y un enlace que redireciona al index -->
 				<a class="div__a" href="https://www.facebook.com/mogna.acompanandoaventuras.39" target="_blank">
-					<img class="div__a__img" src="../img/facebook.png" alt="logoFc">
+					<img class="div__a__img" src="../img/facebook.svg" alt="logoFc">
 				</a>
 				<a class="div__a" href="https://www.instagram.com/mognaarg/?hl=es-la" target="_blank">
-					<img class="div__a__img" src="../img/instagram.png" alt="logoIg">
+					<img class="div__a__img" src="../img/instagram.svg" alt="logoIg">
 				</a>
 			</div>
 			<div>
@@ -45,13 +41,7 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav me-auto mb-2 mb-lg-0 nav__list">
 								<li class="nav-item">
-									<a class="nav-link active nav__list__item" aria-current="page" href="../index.html">Mogna</a>
-								</li>
-								<li class="nav-item">
 									<a class="nav-link nav__list__item" href="quienesSomos.html">Quienes Somos</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link nav__list__item" href="contactos.html">Contacto</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link nav__list__item" href="productos.html">Productos</a>
@@ -76,6 +66,9 @@
 										</li>
 									</ul>
 								</li>
+								<li class="nav-item">
+									<a class="nav-link nav__list__item" href="contactos.html">Contacto</a>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -91,23 +84,27 @@
 			<article class="section_art">
 				<h2 class="section__art__h2">Diseños disponibles</h2>
 			</article>
-            <div class="section__div--containerProInd">
+			<div class="section__div--containerProInd">
 				<!-- acá hay un flex que contiene la img de cada uno de los producto en html individuales abajo y ellas corresponden a productos de la pyme-->
 				<div>
 					<p class="section__div__div__p">Riñonera Whales</p>
 					<img class="section__div__div__img section__div__div__img--ind" src="../img/rinoDos.jpg" alt="productosBuff">
 				</div>
-                <a class="section__section__a section__section__a--pro" href="#">
-                    <button class="section__section__a__button">Agregar al carrito</button>
-                </a>	
+				<a class="section__section__a section__section__a--pro" href="#">
+					<button class="section__section__a__button">Agregar al carrito</button>
+				</a>
+				<div>
+					<p class="section__div__div__p--tabla"> Precio: $600 <br> Medidas: 30*20 <br> Material: Exterior de cordura impermeable y polar interior <br>
+					</p>
+				</div>
 			</div>
 			<section class="section__section">
 				<a class="section__section__a" href="./productos.html">
-					<button class="section__section__a__button">Volver</button>
+					<button type="button" class="btn btn-outline-secondary section__section__a__button">Volver</button>
 				</a>
 				<!-- agregue un icono de carrito que todavía no tiene utilidad alguna-->
 				<a class="section__section__a" href="#">
-					<img class="section__section__a__img" src="../img/carritoCompras.png" alt="carroIcon">
+					<img class="section__section__a__img" src="../img/carritoCompras.svg" alt="carroIcon">
 				</a>
 			</section>
 		</section>
@@ -116,10 +113,10 @@
 				<form class="containerFooter__form" action="#" method="#">
 					<fieldset class="containerFooter__form__field">
 						<a class="containerFooter__form__field__a" href="https://www.facebook.com/mogna.acompanandoaventuras.39" target="_blank">
-							<img class="containerFooter__form__field__a__img" src="../img/facebook.png" alt="logoFc">
+							<img class="containerFooter__form__field__a__img" src="../img/facebook.svg" alt="logoFc">
 						</a>
 						<a class="containerFooter__form__field__a" href="https://www.instagram.com/mognaarg/?hl=es-la" target="_blank">
-							<img class="containerFooter__form__field__a__img" src="../img/instagram.png" alt="logoIg">
+							<img class="containerFooter__form__field__a__img" src="../img/instagram.svg" alt="logoIg">
 						</a>
 						<label class="containerFooter__form__field__label" for="info-personal">Email</label>
 						<!--este form es para suscripción a las novedades desde cualquier pag del proyecto-->

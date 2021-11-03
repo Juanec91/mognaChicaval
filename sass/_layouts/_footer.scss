@@ -49,8 +49,8 @@
         }
     }
 }
-.footer{
-    &--error{
+.footer {
+    &--error {
         @extend %align-flex;
         flex-direction: column;
         justify-items: center;
@@ -59,15 +59,13 @@
         padding: 2rem;
         width: 100%;
     }
-    &__div{
-        &--error{
+    &__div {
+        &--error {
             font-family: $font-uno;
-        font-size: 2rem;
-        color: $color-dos;
-        text-align: center;
-        letter-spacing: 2px;
+            font-size: 2rem;
+            color: $color-dos;
+            text-align: center;
+            letter-spacing: 2px;
         }
     }
-
 }
-

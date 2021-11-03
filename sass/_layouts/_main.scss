@@ -8,7 +8,7 @@
     justify-content: center;
 }
 /*Este es el titulo de la pag de error*/
-.body__main{
+.body__main {
     @extend %align-flex;
     flex-direction: column;
     justify-items: center;
@@ -16,18 +16,18 @@
     margin: $margin-ud;
     padding: 2rem;
     width: 100%;
-    &__h1{
+    &__h1 {
         font-family: $font-uno;
         font-size: 6rem;
         color: $color-dos;
         text-align: center;
         letter-spacing: 2px;
-        @include movil{
+        @include movil {
             font-family: $font-uno;
-        font-size: 2rem;
-        color: $color-dos;
-        text-align: center;
-        letter-spacing: 2px;
+            font-size: 2rem;
+            color: $color-dos;
+            text-align: center;
+            letter-spacing: 2px;
         }
     }
 }
@@ -46,12 +46,19 @@
         color: $color-uno;
         text-align: center;
         letter-spacing: 2px;
-        @include movil{
+        @include movil {
             font-family: $font-uno;
-        font-size: 3rem;
-        color: $color-uno;
-        text-align: center;
-        letter-spacing: 2px;
+            font-size: 3rem;
+            color: $color-uno;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        &__p {
+            font-family: $font-uno;
+            font-size: 2.5rem;
+            color: $color-uno;
+            text-align: center;
+            letter-spacing: 2px;
         }
     }
     &__h2 {
@@ -60,14 +67,15 @@
         color: $color-uno;
         text-align: center;
         letter-spacing: 2px;
-        @include movil{
+        @include movil {
             font-family: $font-uno;
-        font-size: 2.5rem;
-        color: $color-uno;
-        text-align: center;
-        letter-spacing: 2px;
+            font-size: 2.5rem;
+            color: $color-uno;
+            text-align: center;
+            letter-spacing: 2px;
         }
     }
 }
+
 
 

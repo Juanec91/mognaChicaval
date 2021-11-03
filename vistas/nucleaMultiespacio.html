@@ -22,17 +22,13 @@
 	</head>
 	<body class="body">
 		<header>
-			<div class="div">
-				<a class="div__a" href="../index.html">
-					<!-- header de la pag con las redes y un enlace que redireciona al index -->
-					<!--para colocar los logos-->
-					<img class="div__a__img div__a__img--logoMogna" src="../img/logo.png" alt="logoMarca">
+			<div class="div div--containerHead">
+				<!-- header de la pag con las redes y un enlace que redireciona al index -->
+				<a class="div__a" href="https://www.facebook.com/mogna.acompanandoaventuras.39" target="_blank">
+					<img class="div__a__img" src="../img/facebook.svg" alt="logoFc">
 				</a>
-				<a class="div__a"  href="https://www.facebook.com/mogna.acompanandoaventuras.39" target="_blank">
-					<img class="div__a__img" src="../img/facebook.png" alt="logoFc">
-				</a>
-				<a class="div__a"  href="https://www.instagram.com/mognaarg/?hl=es-la" target="_blank">
-					<img class="div__a__img" src="../img/instagram.png" alt="logoIg">
+				<a class="div__a" href="https://www.instagram.com/mognaarg/?hl=es-la" target="_blank">
+					<img class="div__a__img" src="../img/instagram.svg" alt="logoIg">
 				</a>
 			</div>
 			<div>
@@ -47,13 +43,7 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav me-auto mb-2 mb-lg-0 nav__list">
 								<li class="nav-item">
-									<a class="nav-link active nav__list__item" aria-current="page" href="../index.html">Mogna</a>
-								</li>
-								<li class="nav-item">
 									<a class="nav-link nav__list__item" href="quienesSomos.html">Quienes Somos</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link nav__list__item" href="contactos.html">Contacto</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link nav__list__item" href="productos.html">Productos</a>
@@ -78,6 +68,9 @@
 										</li>
 									</ul>
 								</li>
+								<li class="nav-item">
+									<a class="nav-link nav__list__item" href="contactos.html">Contacto</a>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -88,7 +81,7 @@
 			<h1 class="main__titulo" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="2000">Mogna Acompañando Aventuras</h1>
 			<!-- titulo principal con el nombre de la pyme-->
 			<h2 class="main__h2"> Nuclea Multiespacio </h2>
-				<!-- titulo secundario con el nombre del espacio que compone varias pymes-->
+			<!-- titulo secundario con el nombre del espacio que compone varias pymes-->
 		</main>
 		<section>
 			<div class="div div--nuclea">
@@ -100,14 +93,17 @@
 						<div>
 							<span class="div__p__span">Núclea </span>
 						</div>
-						<div>
-							<p class="div__p div__p--nuclea">
-							Nace de la intención de crear una red de emprendedurismo para potenciarnos en comunidad. <br> Nos basamos en el modelo de tripleimpacto : valor económico, mirada social e impacto ambiental. <br> Ante los diversos desafíos que atravesamos tanto las mujeres como la sociedad en general, y ante la urgencia <br> de generar hábitos responsables con el medioambiente, decidimos unirnos y crear un multiespacio que genere impacto <br> positivo, donde la fuerza colectiva es motor. La visión es la que contiene a la intención de crear, la abraza porque sabe que coexisten una gracias a la otra. Nuestro trabajo es redárquico y solidario, facilitando a más emprendimientos <br> emergentes un espacio donde expandirse.Así nace Núclea: desde nuestros centros, mestizando experiencias, abonando lo caminado y germinando juntas. Nuclea es una red de mujeres que se sostiene de manera autogestiva, su principal objetivo es unir a mujeres emprendedoras de distitos ámbitos con el fin de compartir un espacio creativo. <br> En el espacio se ponen en común las experiencias de las distintas emprendedoras, apostando a la diversidad de miradas <br> que traen cada una de ellas. Por lo que es una apuesta a lo colectivo de las distintas posibilidades <br> de cada una de las mujeres que lo conforman. 
-						</p>
+						<div class="div div--containerPar">
+							<div>
+								<p class="div__p div__p--nuclea"> Nace de la intención de crear una red de emprendedurismo para potenciarnos en comunidad. Nos basamos en el modelo de tripleimpacto: valor económico, mirada social e impacto ambiental. Ante los diversos desafíos que atravesamos tanto las mujeres como la sociedad en general, y ante la urgencia de generar hábitos responsables con el medioambiente, decidimos unirnos y crear un multiespacio que genere impacto positivo, donde la fuerza colectiva es motor. La visión es la que contiene a la intención de crear, la abraza porque sabe que coexisten una gracias a la otra. Nuestro trabajo es redárquico y solidario, facilitando a más emprendimientos emergentes un espacio donde expandirse. </p>
+							</div>
+							<div>
+								<p class="div__p div__p--nuclea"> Así nace Núclea: desde nuestros centros, mestizando experiencias, abonando lo caminado y germinando juntas. Nuclea es una red de mujeres que se sostiene de manera autogestiva, su principal objetivo es unir a mujeres emprendedoras de distitos ámbitos con el fin de compartir un espacio creativo. En el espacio se ponen en común las experiencias de las distintas emprendedoras, apostando a la diversidad de miradas que traen cada una de ellas. Por lo que es una apuesta a lo colectivo de las distintas posibilidades de cada una de las mujeres que lo conforman. </p>
+							</div>
 						</div>
-						<div>
+						<div class="div--containerP">
 							<span class="div__p__span"> Te invitamos a conocer este universo verde. </span>
-						</div>	
+						</div>
 					</div>
 					<div class="div div--nucleaFlex">
 						<!--este div lo use para acomodar las imagenes con flex en el css-->
@@ -165,10 +161,10 @@
 				<form class="containerFooter__form" action="#" method="#">
 					<fieldset class="containerFooter__form__field">
 						<a class="containerFooter__form__field__a" href="https://www.facebook.com/mogna.acompanandoaventuras.39" target="_blank">
-							<img class="containerFooter__form__field__a__img" src="../img/facebook.png" alt="logoFc">
+							<img class="containerFooter__form__field__a__img" src="../img/facebook.svg" alt="logoFc">
 						</a>
 						<a class="containerFooter__form__field__a" href="https://www.instagram.com/mognaarg/?hl=es-la" target="_blank">
-							<img class="containerFooter__form__field__a__img" src="../img/instagram.png" alt="logoIg">
+							<img class="containerFooter__form__field__a__img" src="../img/instagram.svg" alt="logoIg">
 						</a>
 						<label class="containerFooter__form__field__label" for="info-personal">Email</label>
 						<!--este form es para suscripción a las novedades desde cualquier pag del proyecto-->

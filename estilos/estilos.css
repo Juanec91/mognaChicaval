@@ -15,26 +15,33 @@
 
 /*Header*/
 header {
-  display: inline;
+  display: inline-block;
   height: 100%;
-  width: 100vw; }
+  width: 100%; }
   header nav {
     width: 100%;
     height: 100%;
     border-bottom: 1px solid whitesmoke;
     border-top: solid 1px whitesmoke; }
 
-.div__a :hover {
-  transform: scale(0.9); }
+.div--containerHead {
+  display: inline-flex;
+  width: 100%;
+  flex-direction: row-reverse;
+  justify-content: flex-start; }
 
-.div__a__img {
-  width: 36px;
-  height: 36px;
-  margin: 5px;
-  padding: 5px; }
-  .div__a__img--logoMogna {
-    width: 45px;
-    height: 55px; }
+.div__a {
+  text-decoration: none; }
+  .div__a :hover {
+    transform: scale(0.9); }
+  .div__a__img {
+    width: 36px;
+    height: 36px;
+    margin: 5px;
+    padding: 5px; }
+    .div__a__img--logoMogna {
+      width: 45px;
+      height: 55px; }
 
 /*Nav*/
 .nav__a__img {
@@ -60,7 +67,7 @@ header nav ul {
     position: relative; }
 
 /*Main*/
-.body__main, .main, .section__div__p, .div--flexIndex, .div__p, .div--nuclea, .div__p--nuclea, .div__p__span, .section__div--containerProInd, .section__div__div__p, .section__section__a__button, .article--container, .container--error, .footer--error {
+.body__main, .main, .section__div__p, .div--flexIndex, .div__p, .div--nuclea, .div__p--nuclea, .div__p__span, .section__div--containerProInd, .section__div__div__p, .section__div__div__p--tabla, .section__section__a__button, .article--container, .container--error, .footer--error {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -108,6 +115,12 @@ header nav ul {
         color: rgba(29, 24, 31, 0.959);
         text-align: center;
         letter-spacing: 2px; } }
+    .main__titulo__p {
+      font-family: "Maven Pro", sans-serif;
+      font-size: 2.5rem;
+      color: rgba(29, 24, 31, 0.959);
+      text-align: center;
+      letter-spacing: 2px; }
   .main__h2 {
     font-family: "Maven Pro", sans-serif;
     font-size: 4rem;
@@ -123,7 +136,7 @@ header nav ul {
         letter-spacing: 2px; } }
 
 /*Section*/
-.body__main, .main, .section__div__p, .div--flexIndex, .div__p, .div--nuclea, .div__p--nuclea, .div__p__span, .section__div--containerProInd, .section__div__div__p, .section__section__a__button, .article--container, .container--error, .footer--error {
+.body__main, .main, .section__div__p, .div--flexIndex, .div__p, .div--nuclea, .div__p--nuclea, .div__p__span, .section__div--containerProInd, .section__div__div__p, .section__div__div__p--tabla, .section__section__a__button, .article--container, .container--error, .footer--error {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -131,7 +144,7 @@ header nav ul {
 /*Container grid de toda la sección quienes somos*/
 .containerQs {
   display: grid;
-  grid-template-columns: 30% 40% 30%;
+  grid-template-columns: 50% 50%;
   grid-template-rows: auto;
   grid-row-gap: 2rem;
   justify-items: center;
@@ -139,11 +152,14 @@ header nav ul {
   @media screen and (max-width: 768px) {
     .containerQs {
       grid-template-columns: auto; } }
+  @media screen and (max-width: 425px) {
+    .containerQs {
+      grid-template-columns: auto; } }
 
 /*clase para acomodar las imagenes y el párrafo*/
 .section__div__img {
-  width: 320px;
-  height: 410px;
+  width: 340px;
+  height: 430px;
   border: solid black; }
   @media screen and (max-width: 1920px) {
     .section__div__img {
@@ -152,8 +168,8 @@ header nav ul {
       border: solid black; } }
   @media screen and (max-width: 1024px) {
     .section__div__img {
-      width: 320px;
-      height: 410px;
+      width: 340px;
+      height: 430px;
       border: solid black; } }
   @media screen and (max-width: 768px) {
     .section__div__img {
@@ -167,8 +183,8 @@ header nav ul {
       border: solid black; } }
 
 .section__div__img--otraFoto {
-  height: 470px;
-  width: 320px;
+  height: 430px;
+  width: 290px;
   border: solid black; }
   @media screen and (max-width: 1920px) {
     .section__div__img--otraFoto {
@@ -177,8 +193,8 @@ header nav ul {
       border: solid black; } }
   @media screen and (max-width: 1024px) {
     .section__div__img--otraFoto {
-      height: 470px;
-      width: 320px;
+      height: 430px;
+      width: 290px;
       border: solid black; } }
   @media screen and (max-width: 768px) {
     .section__div__img--otraFoto {
@@ -200,6 +216,11 @@ header nav ul {
   text-align: center;
   padding: 10px;
   margin: 5px; }
+
+.section__div--containerFotoQs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
 /*clases section index*/
 .div--flexIndex {
@@ -309,7 +330,8 @@ header nav ul {
   padding: 10px;
   margin: 5px;
   font-weight: bold;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  background-image: linear-gradient(to left bottom, #f8e06e, #f7e994, #f8f1b8, #fbf9db, #fffffe); }
   @media screen and (max-width: 425px) {
     .div__p__span {
       font-size: 2.8rem;
@@ -335,6 +357,16 @@ header nav ul {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column; }
+
+.div--containerPar {
+  display: grid;
+  grid-template-columns: 50% 50%; }
+  @media screen and (max-width: 768px) {
+    .div--containerPar {
+      grid-template-columns: auto; } }
+  @media screen and (max-width: 425px) {
+    .div--containerPar {
+      grid-template-columns: auto; } }
 
 /*section de productos*/
 .section__art__h2 {
@@ -401,6 +433,17 @@ header nav ul {
       letter-spacing: 1.5px;
       padding: 10px;
       margin: 5px; }
+      .section__div__div__p--tabla {
+        font-family: "Maven Pro", sans-serif;
+        font-size: 1.5rem;
+        color: rgba(29, 24, 31, 0.959);
+        font-weight: bolder;
+        text-align: center;
+        letter-spacing: 1.5px;
+        padding: 10px;
+        margin: 5px;
+        background-color: whitesmoke;
+        border: solid 2px rgba(37, 37, 37, 0.637); }
 
 .section__section__a {
   display: flex;
@@ -415,7 +458,8 @@ header nav ul {
     text-decoration: none; }
   .section__section__a__img {
     width: 60px;
-    height: 60px; }
+    height: 60px;
+    color: gray; }
     .section__section__a__img:hover {
       border: 1px solid whitesmoke; }
   .section__section__a__button {
@@ -427,8 +471,8 @@ header nav ul {
     padding: 10px;
     margin: 5px;
     text-decoration: none;
-    border-color: rgba(34, 34, 34, 0.664);
-    border-radius: 20%;
+    border-color: rgba(0, 0, 0, 0.664);
+    border-radius: 5%;
     background-color: whitesmoke; }
 
 /*clases correspondientes al container y dimensión de las img del html de error*/
@@ -475,6 +519,7 @@ header nav ul {
   background-image: url(/img/imgForm.jpg);
   background-repeat: initial;
   width: 100%;
+  height: 100%;
   display: inline-block;
   margin: 3rem 0px 3rem 0px;
   /*tipografía y margenes del form*/ }

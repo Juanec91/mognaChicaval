@@ -6,6 +6,7 @@
     background-image: url(/img/imgForm.jpg);
     background-repeat: initial;
     width: 100%;
+    height: 100%;
     display: inline-block;
     margin: 3rem 0px 3rem 0px;
     /*tipografía y margenes del form*/
@@ -47,15 +48,14 @@
                     width: 300px;
                     height: 150px;
                     transition: all 3s;
-                    @include movil { width: 200px;
+                    @include movil {
+                        width: 200px;
                         height: 100px;
-
                     }
                     &:focus {
                         width: 450px;
                         height: 200px;
                     }
-                    
                 }
             }
             &__button {

@@ -12,7 +12,7 @@
 /*Container grid de toda la sección quienes somos*/
 .containerQs {
     display: grid;
-    grid-template-columns: 30% 40% 30%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: auto;
     grid-row-gap: 2rem;
     justify-items: center;
@@ -20,21 +20,24 @@
     @include tablet {
         grid-template-columns: auto;
     }
+    @include movil {
+        grid-template-columns: auto;
+    }
 }
 /*clase para acomodar las imagenes y el párrafo*/
 .section__div {
     &__img {
-        width: 320px;
-        height: 410px;
+        width: 340px;
+        height: 430px;
         border: $border-uno;
         @include grandes {
             width: 420px;
             height: 510px;
             border: $border-uno;
         }
-        @include normal{
-            width: 320px;
-            height: 410px;
+        @include normal {
+            width: 340px;
+            height: 430px;
             border: $border-uno;
         }
         @include tablet {
@@ -49,17 +52,17 @@
         }
     }
     &__img--otraFoto {
-        height: 470px;
-        width: 320px;
+        height: 430px;
+        width: 290px;
         border: $border-uno;
         @include grandes {
             height: 570px;
             width: 420px;
             border: $border-uno;
         }
-        @include normal{
-            height: 470px;
-            width: 320px;
+        @include normal {
+            height: 430px;
+            width: 290px;
             border: $border-uno;
         }
         @include tablet {
@@ -83,6 +86,11 @@
         text-align: center;
         padding: 10px;
         margin: 5px;
+    }
+    &--containerFotoQs {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 }
 /*clases section index*/
@@ -114,7 +122,6 @@
             width: 150px;
             height: 230px;
         }
-        
 
         &--imgSecIndex {
             width: 380px;
@@ -125,7 +132,7 @@
                 height: 480px;
                 box-shadow: 11px 10px 31px 15px rgba(128, 124, 128, 0.77);
             }
-            @include normal{
+            @include normal {
                 width: 380px;
                 height: 380px;
                 box-shadow: 11px 10px 31px 15px rgba(128, 124, 128, 0.77);
@@ -133,7 +140,7 @@
             @include tablet {
                 width: 330px;
                 height: 330px;
-            }             
+            }
             @include movil {
                 width: 230px;
                 height: 230px;
@@ -168,7 +175,7 @@
             height: 600px;
             width: 600px;
             border: $border-uno;
-            box-shadow: 11px 10px 31px 15px rgba(128, 124, 128, 0.77);            
+            box-shadow: 11px 10px 31px 15px rgba(128, 124, 128, 0.77);
             @include tablet {
                 height: 500px;
                 width: 500px;
@@ -210,6 +217,14 @@
             margin: 5px;
             font-weight: bold;
             letter-spacing: 2px;
+            background-image: linear-gradient(
+                to left bottom,
+                #f8e06e,
+                #f7e994,
+                #f8f1b8,
+                #fbf9db,
+                #fffffe
+            );
             @include movil {
                 font-size: 2.8rem;
                 align-self: center;
@@ -238,6 +253,16 @@
         flex-wrap: wrap;
         flex-direction: column;
     }
+    &--containerPar {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        @include tablet {
+            grid-template-columns: auto;
+        }
+        @include movil {
+            grid-template-columns: auto;
+        }
+    }
 }
 /*section de productos*/
 .section {
@@ -247,12 +272,12 @@
         color: $color-uno;
         text-align: center;
         letter-spacing: 2px;
-        @include movil{
+        @include movil {
             font-family: $font-uno;
-        font-size: 2.5rem;
-        color: $color-uno;
-        text-align: center;
-        letter-spacing: 2px;
+            font-size: 2.5rem;
+            color: $color-uno;
+            text-align: center;
+            letter-spacing: 2px;
         }
     }
     &__div {
@@ -269,15 +294,15 @@
             }
             @include movil {
                 grid-template-columns: auto;
-            }   
+            }
         }
-        &--containerProInd{
+        &--containerProInd {
             @extend %align-flex;
-        flex-direction: column;
-        margin: $margin-ud;
-        width: 100%;
+            flex-direction: column;
+            margin: $margin-ud;
+            width: 100%;
         }
-        &__a--pro{
+        &__a--pro {
             text-decoration: none;
         }
         &__div {
@@ -289,21 +314,21 @@
                 &:hover {
                     transform: scale(1.2);
                 }
-                &--ind{
+                &--ind {
                     width: 400px;
                     height: 500px;
                     border: solid rgba(37, 37, 37, 0.637);
-                    @include movil{
+                    @include movil {
                         width: 300px;
                         height: 400px;
                         border: solid rgba(37, 37, 37, 0.637);
-                    &:hover {
-                    transform: scale(1.2);
-                         }
+                        &:hover {
+                            transform: scale(1.2);
+                        }
                     }
                     &:hover {
                         transform: scale(1.3);
-                }
+                    }
                 }
             }
             &__p {
@@ -316,6 +341,19 @@
                 letter-spacing: 1.5px;
                 padding: 10px;
                 margin: 5px;
+                &--tabla {
+                    font-family: $font-uno;
+                    font-size: 1.5rem;
+                    color: $color-uno;
+                    font-weight: bolder;
+                    @extend %align-flex;
+                    text-align: center;
+                    letter-spacing: 1.5px;
+                    padding: 10px;
+                    margin: 5px;
+                    background-color: whitesmoke;
+                    border: solid 2px rgba(37, 37, 37, 0.637);
+                }
             }
         }
     }
@@ -324,16 +362,17 @@
         flex-direction: row-reverse;
         margin: 2rem;
         text-decoration: none;
-        &--pro{
+        &--pro {
             display: flex;
-        flex-direction:row;
-        align-items: center;
-        margin: 2rem;
-        text-decoration: none;
+            flex-direction: row;
+            align-items: center;
+            margin: 2rem;
+            text-decoration: none;
         }
         &__img {
             width: 60px;
             height: 60px;
+            color: gray;
             &:hover {
                 border: 1px solid whitesmoke;
             }
@@ -348,44 +387,15 @@
             padding: 10px;
             margin: 5px;
             text-decoration: none;
-            border-color: rgba(34, 34, 34, 0.664);
-            border-radius: 20%;
+            border-color: rgba(0, 0, 0, 0.664);
+            border-radius: 5%;
             background-color: whitesmoke;
         }
     }
 }
 /*clases correspondientes al container y dimensión de las img del html de error*/
-.article{
-    &--container{
-        @extend %align-flex;
-    flex-direction: column;
-    justify-items: center;
-    flex-wrap: wrap;
-    margin: $margin-ud;
-    padding: 2rem;
-    width: 100%;
-    }
-    &__h2{
-        font-family: $font-uno;
-        font-size: 4rem;
-        color: $color-dos;
-        text-align: center;
-        letter-spacing: 2px;
-    &__a__button{
-        font-family: $font-uno;
-        font-size: 3.5rem;
-        color: $color-uno;
-        text-align: center;
-        letter-spacing: 2px;
-        margin: 2rem 2rem 0 2rem;
-        padding: 1rem;
-        border: solid black;
-        border-radius: 10%;
-    }
-    }
-}
-.container{
-    &--error{
+.article {
+    &--container {
         @extend %align-flex;
         flex-direction: column;
         justify-items: center;
@@ -394,9 +404,37 @@
         padding: 2rem;
         width: 100%;
     }
-    &__img{
+    &__h2 {
+        font-family: $font-uno;
+        font-size: 4rem;
+        color: $color-dos;
+        text-align: center;
+        letter-spacing: 2px;
+        &__a__button {
+            font-family: $font-uno;
+            font-size: 3.5rem;
+            color: $color-uno;
+            text-align: center;
+            letter-spacing: 2px;
+            margin: 2rem 2rem 0 2rem;
+            padding: 1rem;
+            border: solid black;
+            border-radius: 10%;
+        }
+    }
+}
+.container {
+    &--error {
+        @extend %align-flex;
+        flex-direction: column;
+        justify-items: center;
+        flex-wrap: wrap;
+        margin: $margin-ud;
+        padding: 2rem;
+        width: 100%;
+    }
+    &__img {
         height: 220px;
         width: 180px;
     }
 }
-
