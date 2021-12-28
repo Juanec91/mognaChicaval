@@ -513,6 +513,17 @@ header nav ul {
   height: 220px;
   width: 180px; }
 
+.botonJ {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 3.5rem;
+  color: rgba(29, 24, 31, 0.959);
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 2rem 2rem 0 2rem;
+  padding: 1rem;
+  border: solid black;
+  border-radius: 10%; }
+
 /*estas clases corresponden al formulario de contacto*/
 .form {
   /*bg del formulario*/

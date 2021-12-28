@@ -438,3 +438,15 @@
         width: 180px;
     }
 }
+
+.botonJ {
+    font-family: $font-uno;
+            font-size: 3.5rem;
+            color: $color-uno;
+            text-align: center;
+            letter-spacing: 2px;
+            margin: 2rem 2rem 0 2rem;
+            padding: 1rem;
+            border: solid black;
+            border-radius: 10%;
+}
