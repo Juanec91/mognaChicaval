@@ -1,6 +1,11 @@
+renderProduct();
 
 
-function Producto(id, tipo, cantidad, precio) {
+container.addEventListener('click', addToCart);
+container.addEventListener('click', removeToCart);
+
+
+/*function Producto(id, tipo, cantidad, precio) {
 	this.id = id;
 	this.tipo = tipo;
 	this.cantidad = cantidad;
@@ -39,7 +44,7 @@ function onclick () {
                           <h3> $ ${producto.cantidad}</h3>`
 	document.body.appendChild(nuevodiv);
 }
-
+*/
 
 
 /*const btn = document.getElementById('botonJs');

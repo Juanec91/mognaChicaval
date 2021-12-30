@@ -1,3 +1,51 @@
+//dom para imprimir los productos en el html
+const renderProduct = () => {
+	products.forEach(product => {
+		container.innerHTML += `
+		<div>
+			<h2 class="section__div__div__p"> ${product.name}</h2>
+			<img class="section__div__div__img section__div__div__img--ind" src="${product.img}"/>
+			<p class="section__div__div__p">$${product.price}</p>
+			<button id="${product.id}" class="section__section__a__button"> Agregar al carrito</>
+		</div>
+		`
+	});
+}
+
+//funcion para agregar al carrito
+const addToCart = e=> {
+	if(e.target.classList.contains('section__section__a__button')){
+		const saveId = products.find(product => product.id == e.target.id)
+		cart.push(saveId);
+		renderCart();
+	}
+
+}
+
+
+//función para sacar del carrito 
+const removeToCart = () =>  { cart.pop }
+
+//dom para imprimir los productos del carrito
+const renderCart = () => {
+	cartContainer.innerHTML = '';
+	cart.forEach(product => {
+		cartContainer.innerHTML += `
+		<div>
+			<h2 class="section__div__div__p"> ${product.name}</h2>
+			<img class="section__div__div__img section__div__div__img--ind--js" src="${product.img}"/>
+			<p class="section__div__div__p">$${product.price}</p>
+			<button id="${product.id}" class="section__section__a__button__2"> Eliminar del carrito</>
+		</div>
+		`
+	});
+}
+
+
+
+
+
+
 
 /*function Producto(id, tipo, cantidad, precio) {
 	this.id = id;
