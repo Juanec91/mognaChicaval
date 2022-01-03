@@ -1,15 +1,14 @@
 //global variables
 const container = document.getElementById('container')
 const cartContainer = document.getElementById('cart-containerJs')
+const containerJs = document.getElementById('cart-containerJs')
 //variables del carrito 
-const cart = [];
-//storage del carrito
-const cartSave = (clave, valor) => { localStorage.setItem(clave, valor);
-for (const product of products) {
-    cartSave(product.id, product.price, product.stock, JSON.stringify(product))
-}}
+let cart = [];
+
+
+
 // array de productos
-const products = [
+let products = [
     {
         id: 1,
         name: 'Riñonera',
@@ -41,8 +40,15 @@ const products = [
 ];
 
 //storage
-const localSave = (clave, valor) => { localStorage.setItem(clave, valor)
+if (localStorage.products) {
+    products = JSON.parse(localStorage.getItem("products"))
+} else{
+    saveStorage("products", products)
+}
+
+/*const localSave = (clave, valor) => { localStorage.setItem(clave, valor)}
 for ( const product of products) {
-    localSave(product.id, product.price, product.stock, JSON.stringify(product))
+    localSave(product.id, JSON.stringify(product))
 }
-}
+
+console.log(localSave)*/

@@ -22,10 +22,34 @@ const addToCart = e=> {
 
 }
 
+//un intento de función de borrar las dejo porque tengo banda de dudas que quiero preguntar.. 
+	/*else if(e.target.classList.contains('section__section__a__button__2')){
+		const quitId = products.find(product => product.id == e.target.id)
+		cart.pop(quitId);
+		removeToCart();
+	}*/
 
-//función para sacar del carrito 
-const removeToCart = () =>  { cart.pop }
 
+//funciíon para elimina
+const removeFromCart = e=>{
+	e.preventDefault();
+	let products;
+	if(e.target.classList.contains('section__section__a__button__2')){
+		e.target.parentElement.parentElement.remove();
+		products = e.target.parentElement.parentElement;
+	}
+}
+
+/*función para sacar del carrito 
+const removeToCart = () =>  {cartContainer.innerHTML = '';
+cart.forEach(product => { 
+	cartContainer.innerHTML = "";
+	
+	var elem = document.getElementById(product.id);
+    return elem.parentNode.removeChild(elem);
+});
+}
+*/
 //dom para imprimir los productos del carrito
 const renderCart = () => {
 	cartContainer.innerHTML = '';

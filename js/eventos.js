@@ -2,7 +2,7 @@ renderProduct();
 
 
 container.addEventListener('click', addToCart);
-container.addEventListener('click', removeToCart);
+containerJs.addEventListener('click', (e)=>{removeFromCart(e)});
 
 
 /*function Producto(id, tipo, cantidad, precio) {
