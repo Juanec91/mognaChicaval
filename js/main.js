@@ -35,8 +35,8 @@ const removeFromCart = e=>{
 	e.preventDefault();
 	let products;
 	if(e.target.classList.contains('section__section__a__button__2')){
-		e.target.parentElement.parentElement.remove();
-		products = e.target.parentElement.parentElement;
+		e.target.parentElement.remove();
+		products = e.target.parentElement;
 	}
 }
 
