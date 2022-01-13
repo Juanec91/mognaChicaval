@@ -14,6 +14,11 @@
         @content;
     }
 }
+@mixin bNormal {
+    @media  screen and (max-width: 1366px) {
+        @content;
+    }
+}
 @mixin grandes {
     @media screen and (max-width: 1920px) {
         @content;
