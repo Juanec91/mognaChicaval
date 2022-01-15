@@ -1,12 +1,12 @@
 //global variables
 const container = document.getElementById('container')
-const cartContainer = document.getElementById('cart-containerJs')
-const containerJs = document.getElementById('cart-containerJs')
+const clearButton = document.getElementById('clear')
 const toggleButton = $("#toggleJs")
 //variables del carrito 
 let cart = [];
 let cartLocalStorage = window.localStorage;
-
+const cartContainer = document.getElementById('cart-containerJs')
+const containerJs = document.getElementById('cart-containerJs')
 
 
 // array de productos
