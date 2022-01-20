@@ -67,7 +67,7 @@ header nav ul {
     position: relative; }
 
 /*Main*/
-.body__main, .main, .section__div__p, .div--flexIndex, .div__p, .div--nuclea, .div__p--nuclea, .div__p__span, .section__div--containerProInd, .section__div__div__p, .section__div__div__p--tabla, .section__section__a__button, .section__section__a__button__2, .article--container, .container--error, .footer--error {
+.body__main, .main, .section__div__p, .div--flexIndex, .div__p, .div--nuclea, .div__p--nuclea, .div__p__span, .section__div--containerProInd, .section__div__div__p, .section__div__div__p--tabla, .section__section__a__button, .section__section__a__button__2, .article--container, .footer--error {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -136,7 +136,7 @@ header nav ul {
         letter-spacing: 2px; } }
 
 /*Section*/
-.body__main, .main, .section__div__p, .div--flexIndex, .div__p, .div--nuclea, .div__p--nuclea, .div__p__span, .section__div--containerProInd, .section__div__div__p, .section__div__div__p--tabla, .section__section__a__button, .section__section__a__button__2, .article--container, .container--error, .footer--error {
+.body__main, .main, .section__div__p, .div--flexIndex, .div__p, .div--nuclea, .div__p--nuclea, .div__p__span, .section__div--containerProInd, .section__div__div__p, .section__div__div__p--tabla, .section__section__a__button, .section__section__a__button__2, .article--container, .footer--error {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -407,13 +407,13 @@ header nav ul {
     flex-direction: column;
     margin: 2rem 0 2rem 0;
     width: 100%; }
-  .section__div--containerProJs {
+  .section__div--containerJs {
+    display: none;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 1;
     grid-row-gap: 2rem;
-    justify-items: center;
-    display: none; }
+    justify-items: center; }
   .section__div__a--pro {
     text-decoration: none; }
   .section__div__div {
@@ -542,15 +542,7 @@ header nav ul {
     border: solid black;
     border-radius: 10%; }
 
-.container--error {
-  flex-direction: column;
-  justify-items: center;
-  flex-wrap: wrap;
-  margin: 2rem 0 2rem 0;
-  padding: 2rem;
-  width: 100%; }
-
-.container__img {
+#cart-containerJs__img {
   height: 220px;
   width: 180px; }
 

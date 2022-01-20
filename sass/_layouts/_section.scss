@@ -308,13 +308,14 @@
             margin: $margin-ud;
             width: 100%;
         }
-        &--containerProJs{
+        &--containerJs{
+            display: none;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(3, 1fr);
+            grid-template-rows: 1;
             grid-row-gap: 2rem;
             justify-items: center;
-            display: none;
+        
         }
         &__a--pro {
             text-decoration: none;
@@ -470,16 +471,8 @@
         }
     }
 }
-.container {
-    &--error {
-        @extend %align-flex;
-        flex-direction: column;
-        justify-items: center;
-        flex-wrap: wrap;
-        margin: $margin-ud;
-        padding: 2rem;
-        width: 100%;
-    }
+#cart-containerJs {
+   
     &__img {
         height: 220px;
         width: 180px;

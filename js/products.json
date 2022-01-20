@@ -1,5 +1,4 @@
-//global variables
-let products = [
+ [
     {
         "id": 1,
         "name": "Riñonera",
@@ -84,20 +83,4 @@ let products = [
         "price": 1000,
         "stock": 50
     }
-
-    ]
-    
-
-//variables del carrito 
-
-let cart = [];
-
-let cartLocalStorage = window.localStorage;
-
-const cartContainer = document.getElementById('cart-containerJs')
-const containerJs = document.getElementById('cart-containerJs')
-const container = document.getElementById('container')
-const clearButton = document.getElementById('clear')
-const toggleButton = $("#toggleJs")
-
-// array de productos
+]
