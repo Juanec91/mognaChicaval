@@ -46,7 +46,7 @@
 									<a class="nav-link nav__list__item" href="quienesSomos.html">Quienes Somos</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link nav__list__item" href="productos.html">Productos</a>
+									<a class="nav-link nav__list__item" href="productosJs.html">Productos</a>
 								</li>
 								<li class="nav-item dropdown">
 									<a class="nav-link dropdown-toggle nav__list__item" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Nos Nuclean </a>
@@ -79,56 +79,53 @@
 		</header>
 		<main class="main">
 			<h1 class="main__titulo" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="2000">Mogna Acompañando Aventuras</h1>
-			<!-- titulo principal con el nombre de la pyme-->
 		</main>
-		<section class="section">
-			<article class="section_art">
-				<h2 class="section__art__h2">Diseños disponibles</h2>
-			</article>
-			<div class="section__div--containerPro" id="container">
-				<!-- acá hay un grid que contiene las img de abajo y ellas corresponden a productos de la pyme-->
-            </div>
-			<div>
-				<button id="toggleJs" class="section__section__a" href="#">
-					<img class="section__section__a__img" src="../img/carritoCompras.svg" alt="carroIcon">
-				</button>
-				<button id="toggleJs" class="section__section__a" href="#">
-					<img id="clear" class="section__section__a__img" src="../img/carritoV.svg" alt="carroIcon">
-				</button>
-			</div>
-            <div id ="cart-containerJs" class="section__div--containerJs" >
-            	
-			</div>
-
-
-		</section>
-		<footer>
-			<div class="containerFooter">
-				<form class="containerFooter__form" action="#" method="#">
-					<fieldset class="containerFooter__form__field">
-						<a class="containerFooter__form__field__a" href="https://www.facebook.com/mogna.acompanandoaventuras.39" target="_blank">
-							<img class="containerFooter__form__field__a__img" src="../img/facebook.svg" alt="logoFc">
-						</a>
-						<a class="containerFooter__form__field__a" href="https://www.instagram.com/mognaarg/?hl=es-la" target="_blank">
-							<img class="containerFooter__form__field__a__img" src="../img/instagram.svg" alt="logoIg">
-						</a>
-						<label class="containerFooter__form__field__label" for="info-personal">Email</label>
-						<!--este form es para suscripción a las novedades desde cualquier pag del proyecto-->
-						<input class="containerFooter__form__field__label" type="email" name="info-personal" id="" placeholder="Ingrese su email">
-						<label class="containerFooter__form__field__label" for="info-personal"></label>
-						<input type="checkbox" name="newsletter" id="">¿Quieres suscribirte a nuestro newsletter? <input class="labelFormFooter containerFooter__form__field__label" type="submit" value="Enviar formulario">
-					</fieldset>
+		<div class="slide-container">
+			<div id="store-products" class="container">
+				<form action="">
+					<i class="fas fa-search"></i>
+					<input class="containerFooter__form__field__label" type="text" name="" id="search-item" placeholder="Buscar productos" onkeyup="search()">
 				</form>
+					<section class="container" id="store-products">
+						<div id="product-list" class="row">
+							<div id="items" class="col-sm-9 row"></div>
+							<aside class="col-sm-3">
+								<h2>Carrito</h2>
+								<ul id="carrito" class="list-group"></ul>
+								<hr>
+								<p class="text-right section__div__p--js">Total: <span id="total"></span>&dollar;; </p>
+								<button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+							</aside>
+						</div>
+				</div>
+				</section>
 			</div>
-		</footer>
-		<!-- Option 1: Bootstrap Bundle with Popper -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-        <!--llamado a jquery-->
-		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>	
-		<!--llamado a los escript js-->
-        <script src="../js/global.js"></script>
-        <script src="../js/main.js"></script>	
-		
-    </div>
-    </body>
+			<footer>
+				<div class="containerFooter">
+					<form class="containerFooter__form" action="#" method="#">
+						<fieldset class="containerFooter__form__field">
+							<a class="containerFooter__form__field__a" href="https://www.facebook.com/mogna.acompanandoaventuras.39" target="_blank">
+								<img class="containerFooter__form__field__a__img" src="../img/facebook.svg" alt="logoFc">
+							</a>
+							<a class="containerFooter__form__field__a" href="https://www.instagram.com/mognaarg/?hl=es-la" target="_blank">
+								<img class="containerFooter__form__field__a__img" src="../img/instagram.svg" alt="logoIg">
+							</a>
+							<label class="containerFooter__form__field__label" for="info-personal">Email</label>
+							<!--este form es para suscripción a las novedades desde cualquier pag del proyecto-->
+							<input class="containerFooter__form__field__label" type="email" name="info-personal" id="" placeholder="Ingrese su email">
+							<label class="containerFooter__form__field__label" for="info-personal"></label>
+							<input type="checkbox" name="newsletter" id="">¿Quieres suscribirte a nuestro newsletter? <input class="labelFormFooter containerFooter__form__field__label" type="submit" value="Enviar formulario">
+						</fieldset>
+					</form>
+				</div>
+			</footer>
+			<!-- Option 1: Bootstrap Bundle with Popper -->
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+			<!--llamado a jquery-->
+			<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+			<!--llamado a los escript js-->
+			<script src="../js/global.js"></script>
+			<script src="../js/main.js"></script>
+		</div>
+	</body>
 </html>

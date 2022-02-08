@@ -89,6 +89,21 @@
         text-align: center;
         padding: 10px;
         margin: 5px;
+        &--js{
+            font-family: $font-uno;
+            font-size: $font-size;
+            color: $color-uno;
+        }
+        &--jsLi{
+            font-family: $font-uno;
+            font-size: 1.5rem;
+            color: $color-uno;
+        }
+        &--jsCard{
+            font-family: $font-uno;
+            font-size: 2rem;
+            color: $color-uno;
+        }
     }
     &--containerFotoQs {
         display: flex;
@@ -233,6 +248,7 @@
                 align-self: center;
             }
         }
+      
     }
     &--nucleaFlex {
         display: flex;

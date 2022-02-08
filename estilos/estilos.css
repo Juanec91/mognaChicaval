@@ -219,6 +219,18 @@ header nav ul {
   text-align: center;
   padding: 10px;
   margin: 5px; }
+  .section__div__p--js {
+    font-family: "Maven Pro", sans-serif;
+    font-size: 3rem;
+    color: rgba(29, 24, 31, 0.959); }
+  .section__div__p--jsLi {
+    font-family: "Maven Pro", sans-serif;
+    font-size: 1.5rem;
+    color: rgba(29, 24, 31, 0.959); }
+  .section__div__p--jsCard {
+    font-family: "Maven Pro", sans-serif;
+    font-size: 2rem;
+    color: rgba(29, 24, 31, 0.959); }
 
 .section__div--containerFotoQs {
   display: flex;
